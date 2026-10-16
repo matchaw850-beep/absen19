@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Absensi Rapat — Event & Komunitas</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="#beranda"><span class="brand-mark">R</span><span>Rapat<span class="brand-light">Hadir</span></span></a>
+    <nav>
+      <a href="#agenda">Agenda</a>
+      <a href="#absensi">Absensi</a>
+    </nav>
+    <span class="event-badge"><span></span> Event &amp; Komunitas</span>
+  </header>
+
+  <main>
+    <section class="section agenda-section" id="agenda">
+      <div class="section-heading">
+        <div><p class="eyebrow">JADWAL KEGIATAN</p><h2>Agenda rapat hari ini</h2></div>
+        <p>Pastikan kamu mengetahui urutan kegiatan rapat.</p>
+      </div>
+      <div class="agenda-table-wrap">
+        <table class="agenda-table">
+          <thead><tr><th>Sesi</th><th>Topik rapat</th><th>Keterangan</th><th>Waktu</th></tr></thead>
+          <tbody>
+            <tr><td><span class="session">01</span></td><td><strong>Pembukaan</strong></td><td>Pengantar dan pembukaan rapat</td><td class="time">09.00</td></tr>
+            <tr><td><span class="session">02</span></td><td><strong>Evaluasi Program</strong></td><td>Meninjau kegiatan sebelumnya</td><td class="time">09.30</td></tr>
+            <tr><td><span class="session">03</span></td><td><strong>Rencana Event</strong></td><td>Membahas rencana kegiatan berikutnya</td><td class="time">10.30</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section class="section attendance-section" id="absensi">
+      <div class="attendance-info">
+        <p class="eyebrow">FORM KEHADIRAN</p>
+        <h2>Catat kehadiranmu.</h2>
+        <p>Masukkan PIN rapat, isi nama dan jabatan, lalu kirim absensi. Pastikan data yang kamu masukkan sudah benar.</p>
+        <div class="notice"><span>i</span><p><strong>Perlu diketahui</strong><br>PIN diperlukan untuk membuka form. Hubungi panitia jika kamu belum memiliki PIN.</p></div>
+      </div>
+      <div class="form-card">
+        <div class="form-card-heading"><span class="form-icon">✓</span><div><h3>Form Absensi</h3><p>Absensi anggota rapat</p></div><span class="secure-label">PIN</span></div>
+        <form id="attendanceForm">
+          <label for="nama">Nama lengkap</label>
+          <input id="nama" type="text" placeholder="Contoh: Fajar Nugraha" required disabled>
+          <label for="jabatan">Jabatan organisasi</label>
+          <select id="jabatan" required disabled>
+            <option value="">Pilih jabatan</option>
+            <option>Sekretaris</option>
+            <option>Ketua</option>
+            <option>Wakil Ketua</option>
+            <option>Bendahara</option>
+            <option>Anggota</option>
+          </select>
+          <button id="submitButton" class="primary-button submit-button" type="submit" disabled>Kirim Absensi <span>→</span></button>
+          <p class="form-status" id="formStatus">Masukkan PIN saat halaman dibuka untuk mengaktifkan form.</p>
+        </form>
+        <div class="form-bottom"><span>● Data kehadiran</span><span>Rapat organisasi</span></div>
+      </div>
+    </section>
+  </main>
+
+  <footer><a class="brand footer-brand" href="#beranda"><span class="brand-mark">R</span><span>Rapat<span class="brand-light">Hadir</span></span></a><p>Absensi Kedatangan Rapat Organisasi</p><span class="footer-code">COSC6146064 · PROGRAMMING FOR BUSINESS</span></footer>
+  <script src="script.js"></script>
+</body>
+</html>
